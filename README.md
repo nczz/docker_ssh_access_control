@@ -2,6 +2,9 @@
 
 SSH service Docker image source.
 
+> You need to change the key to place in container.
+> > `ssh-keygen -b 4096 -f access.key` 
+
 Build method:
 
 ```bash
