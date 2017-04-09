@@ -23,4 +23,3 @@ Edit:
 docker exec -it SSH_CLIENT bash
 vi /root/authorized_keys
 ```
-```
