@@ -14,5 +14,13 @@ docker build -t WHAT_EVER_YOU_WANT .
 Run:
 
 ```bash
-docker run -d -v path/to/share:/home/root/share -p 1234:22 WHAT_EVER_YOU_WANT
+docker run -d -v /path/to/HOST_FOLDER:/path/to/CONTAINER_FOLDER -p HOST_PORT_NUM:22 --name SSH_CLIENT WHAT_EVER_YOU_WANT
+```
+
+Edit:
+
+```bash
+docker exec -it SSH_CLIENT bash
+vi /root/authorized_keys
+```
 ```
