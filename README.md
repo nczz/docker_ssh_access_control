@@ -14,12 +14,12 @@ docker build -t WHAT_EVER_YOU_WANT .
 Run:
 
 ```bash
-docker run -d --restart=always -v /path/to/HOST_FOLDER:/path/to/CONTAINER_FOLDER -p HOST_PORT_NUM:22 --name SSH_CLIENT WHAT_EVER_YOU_WANT
+docker run -d --restart=always -v /path/to/HOST_FOLDER:/root/publish_html -p HOST_PORT_NUM:22 --name SSH_CLIENT WHAT_EVER_YOU_WANT
 ```
 
 Edit:
 
 ```bash
 docker exec -it SSH_CLIENT bash
-vi /root/authorized_keys
+vi /root/.ssh/authorized_keys
 ```
